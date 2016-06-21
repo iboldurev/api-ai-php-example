@@ -1,0 +1,22 @@
+{
+    "name": "iboldurev/api-ai-php-examples",
+    "description": "Some examples of the api-ai-php sdk",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Boldyrev",
+            "email": "iboldurev@gmail.com",
+            "homepage": "https://github.com/iboldurev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ApiDemo\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.0",
+        "iboldurev/api-ai-php": "0.1.0"
+    }
+}
