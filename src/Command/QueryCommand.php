@@ -2,21 +2,18 @@
 
 namespace ApiDemo\Command;
 
+use Api\Client;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use Api\Client;
 
 /**
- * Class QueryCommand
- *
- * @package ApiDemo\Command
+ * Class QueryCommand.
  */
 class QueryCommand extends Command
 {
-
     protected function configure()
     {
         $this->setName('api:query')
@@ -41,9 +38,8 @@ class QueryCommand extends Command
         $response = json_decode((string) $query->getBody(), true);
 
         $output->writeln('<info>+ Response body :</info>');
-        $output->writeln('<comment>' . json_encode($response, JSON_PRETTY_PRINT) . '</comment>');
+        $output->writeln('<comment>'.json_encode($response, JSON_PRETTY_PRINT).'</comment>');
 
         goto ask;
     }
-
 }
