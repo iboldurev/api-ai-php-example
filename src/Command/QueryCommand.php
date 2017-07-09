@@ -2,7 +2,7 @@
 
 namespace ApiDemo\Command;
 
-use Api\Client;
+use ApiAi\Client;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
